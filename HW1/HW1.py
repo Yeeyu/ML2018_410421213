@@ -1,8 +1,10 @@
-from PIL import Image
+import imageio
+import numpy as np
+import matplotlib.pyplot as plt
 
-key1=Image.open('key1.png')
-key2=Image.open('key2.png')
-I=Image.open('I.png')
-E=Image.open('E.png')
-Eprime=Image.open('Eprime.png')
+key1=imageio.imread('key1.png')
+key2=imageio.imread('key2.png')
+imgI=imageio.imread('I.png')
+imgE=imageio.imread('E.png')
+Eprime=imageio.imread('Eprime.png')
 
