@@ -9,12 +9,12 @@ imgE=imageio.imread('E.png')
 Eprime=imageio.imread('Eprime.png')
 
 epoch=1			 #Set Epoch=1
-weight=np.random.rand(3) #ÀH¾÷¥Í¦¨ªì©l­È
+weight=np.random.rand(3) #éš¨æ©Ÿç”Ÿæˆåˆå§‹å€¼
 a=0.00001 		 #LearningRate
 maxil=10		 #MaxIterLimit
 
 while (epoch==1 or epoch<maxil):
-	for h in range(300):		#³]©w½d³ò
+	for h in range(300):		#è¨­å®šç¯„åœ
 		for w in range(400):
 			ak=weight[0]*key1[h][w]+weight[1]*key2[h][w]+weight[2]*imgI[h][w]
 			ek=imgE[h][w]-ak
