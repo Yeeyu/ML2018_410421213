@@ -14,7 +14,7 @@
     
     MaxIterLimit = 10
     
-## C. the derived weight vector ?? ##
+## C. the derived weight vector w ##
 
     Output w: [0.24914331 0.6613819  0.08923953]
     
