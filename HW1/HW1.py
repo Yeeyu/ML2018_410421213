@@ -11,9 +11,9 @@ Eprime=imageio.imread('Eprime.png')
 epoch=1			 #Set Epoch=1
 weight=np.random.rand(3) #隨機生成初始值
 a=0.00001 		 #LearningRate
-max=10			 #MaxIterLimit
+maxil=10		 #MaxIterLimit
 
-while (epoch==1 or epoch<max):
+while (epoch==1 or epoch<maxil):
 	for h in range(300):		#設定範圍
 		for w in range(400):
 			ak=weight[0]*key1[h][w]+weight[1]*key2[h][w]+weight[2]*imgI[h][w]
