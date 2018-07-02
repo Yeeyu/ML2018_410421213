@@ -10,7 +10,7 @@ Handwritten Character Recognition
 
 雖然增加Layers確實會提升準確率，但是影響微乎其微。
 
-![G1](001.png)
+![G1](https://raw.githubusercontent.com/Yeeyu/ML2018_410421213/master/HW2/001.PNG)
 
-![G2](002.png)
+![G2](https://raw.githubusercontent.com/Yeeyu/ML2018_410421213/master/HW2/002.PNG)
 
