@@ -17,3 +17,16 @@ x_test = x_test.astype('float32')
 x_train /= 255
 x_test /= 255
 #Processing Character Image
+
+model = Sequential()
+model.add(Dense(10, activation='relu', input_shape=(784,)))
+model.add(Dense(10, activation='softmax'))
+
+model.summary()
+
+model.compile(loss='categorical_crossentropy',optimizer=RMSprop(),metrics=['accuracy'])
+
+history = model.fit(x_train,y_train,batch_size,epochs,verbose,validation_data=(x_test, y_test))
+score=model.evaluate(x_test,y_test,verbose=0)
+print('Loss:',score[0])
+print('Accuracy:',score[1])
