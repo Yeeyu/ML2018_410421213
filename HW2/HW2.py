@@ -18,6 +18,9 @@ x_train /= 255
 x_test /= 255
 #Processing Character Image
 
+y_train = keras.utils.to_categorical(y_train, 10)	#Convert vectors
+y_test = keras.utils.to_categorical(y_test, 10)
+
 model = Sequential()
 model.add(Dense(10, activation='relu', input_shape=(784,)))
 model.add(Dense(10, activation='softmax'))
